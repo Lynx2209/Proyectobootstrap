@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Reddit Mono', sans-serif;
+}
+body {
+	background-color: black;
+}
+header {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+.logo {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+}
+.lgo{
+	text-decoration: none;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.logo-imagen{
+	height: 30px;
+	width: 30px;
+	margin-top: 10px
+}
+.nav-bar{
+	margin-top: 20px;
+}
+.paquete {
+	display: none;
+}
+.nav-bar ul {
+	display: flex;
+}
+.nav-bar ul li a{
+	display: block;
+	color: white;
+	font-size: 15px;
+	padding: 10px 25px;
+	border-radius: 50px;
+	transition: 0.2s;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+
+.nav-bar ul li a.active{
+	color: white;
+	background-color: black;
+}
+.nav-bar ul li a:hover {
+	color: black;
+	background-color: white;
+}
+
+@media only screen and (max-width: 1320px) {
+	header{
+		padding: 0 50px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	header{
+		padding: 0 30px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.paquete {
+		display: block;
+		cursor: pointer;
+	}
+	.paquete .linea {
+		width: 30px;
+		height: 3px;
+		background-color: white;
+		margin: 6px 0;
+	}
+	.nav-bar{
+		height: 0;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background-color: black;
+		transition: 0.2s;
+		overflow: hidden;
+	}
+	.nav-bar.active {
+		height: 450px;
+	}
+	.nav-bar ul{
+		display: block;
+		width: fit-content;
+		margin: 80px auto 0 auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
+	}
+	.nav-bar.active ul {
+		opacity: 1;
+	}
+	.nav-bar  ul li a{
+		margin-bottom: 12px;
+		color: red;
+	}
+}
+
+/*------ CARROUSEL------*/
+
+.containertip{
+	height: 100vh;
+	width: 100vh;
+	display: grid;
+	place-content: center;
+}
+.slide {
+	width: 100vw;
+	max-width: 1920px;
+	max-height: 1080px;
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.slide ul {
+	display: flex;
+	padding: 0;
+	width: 450%;
+	
+	animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+@keyframes slide {
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+	
+		25%{margin-left: -150%;}
+	45%{margin-left: -150%;}
+	
+		50%{margin-left: -300%;}
+	70%{margin-left: -300%;}
+	
+		75%{margin-left: -450%;}
+	100%{margin-left: -450%;}
+}
+/*------- FIN -------*/
+
+/*----------- PRODUCTOS -------------*/
+
+.productos {
+	width: 120px;
+	height: 400px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+	display: flex;
+}
+
+/*------- FIN -------*/
+
+/*----------- FOOTER ----------*/
+.bi-chevron-bar-up{
+	color: white;
+	text-align: center;
+	justify-content: center;
+	margin-left: 50%;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.bi-chevron-bar-up:hover{
+	background-color: white;
+	color: black;
+	transition: 0.2s;
+	border-radius: 25%;
+}
+.pie{
+	height: 70px;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.copyright{
+	font-size: 15px;
+	margin-left: 10%;
+	color: rgb(255, 255, 255);
+}
+.documentacion{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	margin-right: 10%; 
+	margin-bottom: 15px;
+}
+.documentacion:hover{
+	text-decoration: underline;
+}

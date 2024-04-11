@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Tienda Online</title>
+	<!-- meta para todos -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="custom.css">
+	<!-- ### -->
+</head>
+
+<body>
+	<!-- cabecera / Barra de navegacion -->
+
+	<header class="fixed-top">
+
+		<a href="index.html" class="lgo">
+			<img class="logo-imagen" src="imagenes/logoeaspaña.png" />
+			<div class="logo">España</div>
+		</a>
+		<div class="paquete">
+			<div class="linea"></div>
+			<div class="linea"></div>
+			<div class="linea"></div>
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li>
+					<a href="#" class="active">Rebajas</a>
+				</li>
+				<li>
+					<a href="#" class="active">Cesta</a>
+				</li>
+				<li>
+					<a href="#" class="active">Cupones</a>
+				</li>
+				<li>
+					<a href="#" class="active">Iniciar sesion</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- cabecera / Barra de navegacion FIN -->
+
+	<!-- Todo -->
+
+	<main>
+
+
+		<!-- Carrousel -->
+		<div class="container containertip">
+			<div class="slide">
+				<ul>
+					<li><img src="imagenes/Color_negro.jpg" alt=""></li>
+					<li><img src="imagenes/Color_negro.jpg" alt=""></li>
+					<li><img src="imagenes/Color_negro.jpg" alt=""></li>
+					<li><img src="imagenes/españajugadores.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Carrousel FIN -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm productos">
+					<img src="imagenes/casorubiales.jpg">
+				</div>
+				<div class="col col-sm productos">
+
+				</div>
+				<div class="col col-sm productos">
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+
+		<a href="#"><i class="bi bi-chevron-bar-up"></i></a>
+		<div class="pie">
+			<p class="copyright">España Corps©</p>
+
+			<a class="documentacion" href="#">Documentacion</a>
+		</div>
+	</footer>
+
+	<!-- Todo FIN -->
+
+	<script>
+		paquete = document.querySelector(".paquete");
+		paquete.onclick = function () {
+			navBar = document.querySelector(".nav-bar");
+			navBar.classList.toggle("active");
+		}
+	</script>
+
+</body>
+
+</html>
